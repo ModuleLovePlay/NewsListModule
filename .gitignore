@@ -1,0 +1,7 @@
+NewsListModule.xcodeproj/xcuserdata/
+NewsListModule.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+NewsListModule.xcodeproj/project.xcworkspace/xcuserdata/
