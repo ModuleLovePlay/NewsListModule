@@ -95,10 +95,14 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.default_subspecs = 'Model'
+  s.default_subspecs = 'Model','View'
 
   s.subspec 'Model' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/Model/*.{h,m}'
+  end
+
+  s.subspec 'View' do |ss|
+    ss.source_files = 'NewsListModule/NewsListModule/View/*.{h,m}'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
