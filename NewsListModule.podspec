@@ -90,23 +90,23 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "NewsListModule/NewsListModule/**/*.{h,m}"
+  # s.source_files  = "NewsListModule/NewsListModule/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.default_subspecs = 'Model','View'
+  s.default_subspecs = 'Model'
 
   s.subspec 'Model' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/Model/*.{h,m}'
   end
 
-  s.subspec 'View' do |ss|
-    ss.source_files = 'NewsListModule/NewsListModule/View/*.{h,m}'
-    ss.dependency 'Macros'
-    ss.dependency 'YYKit'
-    ss.dependency 'Masonry'
-  end
+  # s.subspec 'View' do |ss|
+  #   ss.source_files = 'NewsListModule/NewsListModule/View/*.{h,m}'
+  #   ss.dependency 'Macros'
+  #   ss.dependency 'YYKit'
+  #   ss.dependency 'Masonry'
+  # end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
