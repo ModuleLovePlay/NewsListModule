@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NewsListModule"
-  s.version      = "1"
+  s.version      = "1.0.1"
   s.summary      = "NewsListModule."
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/ModuleLovePlay/NewsListModule.git", :tag => s.version.to_s }
 
-
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -96,6 +95,11 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
+  s.default_subspecs = 'Model'
+
+  s.subspec 'Model' do |ss|
+    ss.source_files = 'NewsListModule/NewsListModule/Model/*.{h,m}'
+  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
