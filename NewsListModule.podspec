@@ -149,8 +149,9 @@ Pod::Spec.new do |s|
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
-  s.dependency 'Macros'
-  s.dependency 'Network'
-  s.dependency 'YYKit'
-  s.dependency 'Masonry'
+  
+  # s.dependency 'Macros'
+  # s.dependency 'Network'
+  # s.dependency 'YYKit'
+  # s.dependency 'Masonry'
 end
