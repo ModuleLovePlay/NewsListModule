@@ -103,6 +103,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'View' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/View/*.{h,m}'
+    ss.dependency 'Macros'
+    ss.dependency 'YYKit'
+    ss.dependency 'Masonry'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
