@@ -95,7 +95,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.default_subspecs = 'Model', 'View'
+  s.default_subspecs = 'Model', 'View', 'Controller'
 
   s.subspec 'Model' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/Model/*.{h,m}'
@@ -107,6 +107,13 @@ Pod::Spec.new do |s|
     ss.dependency 'YYKit'
     ss.dependency 'Masonry'
 
+    ss.dependency 'NewsListModule/Model'
+  end
+
+  s.subspec 'Controller' do |ss|
+    ss.source_files = 'NewsListModule/NewsListModule/Controller/*.{h,m}'
+
+    ss.dependency 'NewsListModule/View'
     ss.dependency 'NewsListModule/Model'
   end
 
@@ -149,7 +156,7 @@ Pod::Spec.new do |s|
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
-  
+
   # s.dependency 'Macros'
   # s.dependency 'Network'
   # s.dependency 'YYKit'
