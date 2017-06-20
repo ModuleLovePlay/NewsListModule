@@ -112,6 +112,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Controller' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/Controller/*.{h,m}'
+    ss.dependency 'Network'
 
     ss.dependency 'NewsListModule/View'
     ss.dependency 'NewsListModule/Model'
