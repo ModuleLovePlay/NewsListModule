@@ -12,4 +12,7 @@ target 'NewsListModule' do
   
   pod 'YYKit'
   pod 'Masonry'
+  
+  pod 'NewsDetailModule'
+  pod 'NewsDetail_Category'
 end

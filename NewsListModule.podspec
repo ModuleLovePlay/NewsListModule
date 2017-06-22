@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NewsListModule"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "NewsListModule."
 
   # This description is used to generate tags and improve search results.
@@ -90,13 +90,14 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  # s.source_files  = "NewsListModule/NewsListModule/**/*.{h,m}"
+  
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.default_subspecs = 'Model', 'View', 'Controller'
-
+  # s.source_files  = "NewsListModule/NewsListModule/**/*.{h,m}"
+  s.default_subspecs = 'Model', 'View', 'Controller', 'Targets'
+  
   s.subspec 'Model' do |ss|
     ss.source_files = 'NewsListModule/NewsListModule/Model/*.{h,m}'
   end
@@ -116,6 +117,12 @@ Pod::Spec.new do |s|
 
     ss.dependency 'NewsListModule/View'
     ss.dependency 'NewsListModule/Model'
+  end
+
+  s.subspec 'Targets' do |ss|
+    ss.source_files = 'NewsListModule/NewsListModule/Targets/*.{h,m}'
+
+    ss.dependency 'NewsListModule/Controller'
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

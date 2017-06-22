@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A78FEDF41EFBA99100E94484 /* Target_NewsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FEDF31EFBA99100E94484 /* Target_NewsList.m */; };
 		A7FDD3711EF8BF200043CA8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FDD3701EF8BF200043CA8C /* main.m */; };
 		A7FDD3741EF8BF200043CA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FDD3731EF8BF200043CA8C /* AppDelegate.m */; };
 		A7FDD3771EF8BF200043CA8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FDD3761EF8BF200043CA8C /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		2FD1C75A03540A946436D1F1 /* Pods-NewsListModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsListModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsListModule/Pods-NewsListModule.release.xcconfig"; sourceTree = "<group>"; };
 		87E52EC6B16D9B5255826AD2 /* libPods-NewsListModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsListModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FEDF21EFBA99100E94484 /* Target_NewsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_NewsList.h; sourceTree = "<group>"; };
+		A78FEDF31EFBA99100E94484 /* Target_NewsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_NewsList.m; sourceTree = "<group>"; };
 		A7FDD36C1EF8BF200043CA8C /* NewsListModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsListModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FDD3701EF8BF200043CA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7FDD3721EF8BF200043CA8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +68,15 @@
 				87E52EC6B16D9B5255826AD2 /* libPods-NewsListModule.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A78FEDEB1EFBA8DE00E94484 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				A78FEDF21EFBA99100E94484 /* Target_NewsList.h */,
+				A78FEDF31EFBA99100E94484 /* Target_NewsList.m */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		A7FDD3631EF8BF200043CA8C = {
@@ -113,6 +125,7 @@
 		A7FDD3861EF8C0690043CA8C /* NewsListModule */ = {
 			isa = PBXGroup;
 			children = (
+				A78FEDEB1EFBA8DE00E94484 /* Targets */,
 				A7FDD3871EF8C0840043CA8C /* Controller */,
 				A7FDD38A1EF8C0840043CA8C /* Model */,
 				A7FDD38D1EF8C0840043CA8C /* View */,
@@ -287,6 +300,7 @@
 				A7FDD3741EF8BF200043CA8C /* AppDelegate.m in Sources */,
 				A7FDD3981EF8C0840043CA8C /* NewsTitleImageCellNode.m in Sources */,
 				A7FDD3951EF8C0840043CA8C /* NewsListInfoModel.m in Sources */,
+				A78FEDF41EFBA99100E94484 /* Target_NewsList.m in Sources */,
 				A7FDD3961EF8C0840043CA8C /* NewsImageTitleCellNode.m in Sources */,
 				A7FDD3711EF8BF200043CA8C /* main.m in Sources */,
 				A7FDD3941EF8C0840043CA8C /* NewsListViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NewsListViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NewsListViewController *listVC = [[NewsListViewController alloc] init];
+    [self addChildViewController:listVC];
+    [self.view addSubview:listVC.view];
 }
 
 
