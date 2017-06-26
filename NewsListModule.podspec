@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "NewsListModule"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "NewsListModule."
 
   # This description is used to generate tags and improve search results.
@@ -135,6 +135,10 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
+
+  s.sources_bundles = {
+    'NewsListModule' => ['NewsListModule/Assets/image.xcassets']
+  }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
