@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
-  s.resource_bundles = { 'NewsListModule' => ['NewsListModule/Assets/image.xcassets'] }
+  s.resource_bundles = { 'NewsListModule' => ['NewsListModule/Assets.xcassets'] }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
